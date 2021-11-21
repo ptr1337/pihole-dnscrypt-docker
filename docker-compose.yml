@@ -28,10 +28,10 @@ services:
       - "53:53/tcp"
       - "53:53/udp"
       - "80:80/tcp"
-      - "443:443/tcp"
+#      - "443:443/tcp"
     environment:
       # TZ: ''
-      # WEBPASSWORD: ''
+      WEBPASSWORD: 'pihole'
       DNS1: "10.0.1.2#5300"
       DNS2: "no"
     volumes:
